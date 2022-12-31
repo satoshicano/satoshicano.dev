@@ -11,7 +11,16 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: "https://satoshicano.dev",
-  integrations: [mdx(), sitemap(), partytown()],
+  integrations: [
+    mdx(),
+    sitemap(),
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+  ],
   output: "server",
   adapter: vercel()
 });
