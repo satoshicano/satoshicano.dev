@@ -6,9 +6,12 @@ import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
+import partytown from "@astrojs/partytown";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://satoshicano.dev",
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), partytown()],
   output: "server",
   adapter: vercel()
 });
