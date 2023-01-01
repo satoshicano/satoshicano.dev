@@ -15,7 +15,6 @@
     "@astrojs/partytown": "^1.0.2",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/vercel": "^2.4.0",
     "astro": "^1.8.0"
   }
 }
