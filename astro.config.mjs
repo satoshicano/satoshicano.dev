@@ -7,7 +7,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://satoshicano.dev",
+  site: "https://satoshicano.dev/",
   integrations: [
     mdx(),
     sitemap(),
