@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/mdx": "^0.17.2",
     "@astrojs/partytown": "^1.0.3",
-    "@astrojs/rss": "^2.1.1",
+    "@astrojs/rss": "^2.2.0",
     "@astrojs/sitemap": "^1.1.0",
     "astro": "^2.0.18"
   },
