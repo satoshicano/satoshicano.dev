@@ -19,7 +19,7 @@
     "@astrojs/mdx": "^0.18.2",
     "@astrojs/partytown": "^1.2.0",
     "@astrojs/rss": "^2.3.2",
-    "@astrojs/sitemap": "^1.2.1",
+    "@astrojs/sitemap": "^1.2.2",
     "astro": "^2.1.9"
   },
   "devDependencies": {
