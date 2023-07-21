@@ -20,7 +20,7 @@
     "@astrojs/partytown": "^1.2.3",
     "@astrojs/rss": "^2.4.3",
     "astro": "^2.8.4",
-    "@astrojs/sitemap": "^2.0.0"
+    "@astrojs/sitemap": "^2.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.1.0",
