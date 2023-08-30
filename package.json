@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
-    "@astrojs/partytown": "^1.2.3",
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
-    "astro": "^3.0.0-beta.2"
+    "astro": "^3.0.0-rc.11"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
