@@ -22,7 +22,7 @@
     "astro": "^3.0.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.1.0",
+    "@astrojs/check": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
