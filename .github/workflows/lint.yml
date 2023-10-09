@@ -4,17 +4,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set Node.js 18.x
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18.x
-      - name: ci
-        run: npm ci
-      - name: TypeCheck
-        run: npm run type:check
-      - name: Lint
-        run: npm run lint
-      - name: Format
-        run: npm run format:check
+          bun-version: latest
+      - run: bun install
+      - run: bun run type:check
+      - run: bun run lint
+      - run: bun run format:check
