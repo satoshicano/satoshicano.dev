@@ -1,6 +1,6 @@
 {
   "extends": ["config:recommended", ":timezone(Asia/Tokyo)"],
-  "baseBranches": ["develop"],
+  "baseBranches": ["main"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
@@ -9,6 +9,5 @@
     }
   ],
   "labels": ["dependencies"],
-  "schedule": ["before 9am"],
-  "timezone": "Asia/Tokyo"
+  "schedule": ["before 9am"]
 }
