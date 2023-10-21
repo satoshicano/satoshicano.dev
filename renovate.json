@@ -1,13 +1,10 @@
 {
-  "extends": ["config:recommended", ":timezone(Asia/Tokyo)"],
-  "baseBranches": ["main"],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
-    }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":timezone(Asia/Tokyo)",
+    ":preserveSemverRanges"
   ],
-  "labels": ["dependencies"],
-  "schedule": ["before 9am"]
+  "baseBranches": ["main"],
+  "labels": ["dependencies"]
 }
