@@ -6,5 +6,11 @@
     ":preserveSemverRanges"
   ],
   "baseBranches": ["main"],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
 }
