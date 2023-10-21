@@ -10,5 +10,5 @@ module.exports = {
   ],
   labels: ["dependencies"],
   schedule: ["before 9am"],
-  timezone: "Asia/Tokyo"
+  timezone: "Asia/Tokyo",
 };
