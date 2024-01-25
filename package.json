@@ -1,34 +1,32 @@
 {
-  "name": "satoshicano.dev",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "eslint --ext .js,.astro src",
-    "lint:fix": "eslint --ext .js,.astro src --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "type:check": "astro check && tsc --noEmit"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "2.1.0",
-    "@astrojs/rss": "4.0.3",
-    "@astrojs/sitemap": "3.0.5",
-    "astro": "4.2.4"
-  },
-  "devDependencies": {
-    "@astrojs/check": "0.4.1",
-    "@typescript-eslint/eslint-plugin": "6.19.1",
-    "@typescript-eslint/parser": "6.19.1",
-    "eslint": "8.56.0",
-    "eslint-plugin-astro": "0.31.3",
-    "prettier": "3.2.2",
-    "prettier-plugin-astro": "0.13.0",
-    "typescript": "5.3.3"
-  }
+	"name": "satoshicano.dev",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "eslint --ext .js,.astro src",
+		"lint:fix": "eslint --ext .js,.astro src --fix",
+		"format": "bunx @biomejs/biome check --apply .",
+		"type:check": "astro check && tsc --noEmit"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "2.1.0",
+		"@astrojs/rss": "4.0.3",
+		"@astrojs/sitemap": "3.0.5",
+		"astro": "4.2.4"
+	},
+	"devDependencies": {
+		"@astrojs/check": "0.4.1",
+		"@biomejs/biome": "1.5.3",
+		"@typescript-eslint/eslint-plugin": "6.19.1",
+		"@typescript-eslint/parser": "6.19.1",
+		"eslint": "8.56.0",
+		"eslint-plugin-astro": "0.31.3",
+		"typescript": "5.3.3"
+	}
 }
