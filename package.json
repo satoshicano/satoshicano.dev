@@ -11,7 +11,7 @@
 		"astro": "astro",
 		"lint": "eslint --ext .js,.astro src",
 		"lint:fix": "eslint --ext .js,.astro src --fix",
-		"format": "bunx @biomejs/biome check --apply .",
+		"format": "bunx @biomejs/biome check --write .",
 		"type:check": "astro check && tsc --noEmit"
 	},
 	"dependencies": {
