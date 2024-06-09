@@ -9,8 +9,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"lint": "eslint --ext .js,.astro src",
-		"lint:fix": "eslint --ext .js,.astro src --fix",
+		"lint": "eslint src",
+		"lint:fix": "eslint src --fix",
 		"format": "bunx @biomejs/biome check --write .",
 		"format:check": "bunx @biomejs/biome check",
 		"type:check": "astro check && tsc --noEmit"
@@ -24,10 +24,10 @@
 	"devDependencies": {
 		"@astrojs/check": "0.7.0",
 		"@biomejs/biome": "1.8.0",
-		"@typescript-eslint/eslint-plugin": "6.21.0",
-		"@typescript-eslint/parser": "6.21.0",
-		"eslint": "8.57.0",
-		"eslint-plugin-astro": "0.34.0",
+		"@typescript-eslint/eslint-plugin": "7.12.0",
+		"@typescript-eslint/parser": "7.12.0",
+		"eslint": "9.4.0",
+		"eslint-plugin-astro": "1.2.0",
 		"typescript": "5.4.5"
 	}
 }
