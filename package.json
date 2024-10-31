@@ -16,10 +16,10 @@
 		"type:check": "astro check && tsc --noEmit"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "3.1.8",
+		"@astrojs/mdx": "3.1.9",
 		"@astrojs/rss": "4.0.9",
 		"@astrojs/sitemap": "3.2.1",
-		"astro": "4.16.7"
+		"astro": "4.16.8"
 	},
 	"devDependencies": {
 		"@astrojs/check": "0.9.4",
