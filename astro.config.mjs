@@ -6,4 +6,8 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
 	site: "https://satoshicano.dev/",
 	integrations: [mdx(), sitemap()],
+	i18n: {
+		defaultLocale: "ja",
+		locales: ["ja", "en"],
+	},
 });
