@@ -9,17 +9,20 @@ const { url } = Astro.props;
 const metadata = await getLinkPreview(url);
 ---
 
-<div class="link-preview-card">
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="link-preview-card"
+>
   {
     metadata ? (
       <>
-        <a href={url} target="_blank" rel="noopener noreferrer" class="link-preview-card-content">
-          <h2 class="link-preview-card-title">{metadata.title}</h2>
+        <div class="link-preview-card-content">
+          <h3 class="link-preview-card-title">{metadata.title}</h2>
           <p class="link-preview-card-description">{metadata.description}</p>
-          <span class="link-preview-card-url">
-            {url}
-          </span>
-        </a>
+          <span class="link-preview-card-url">{url}</span>
+        </div>
         {metadata.image && (
           <img
             src={metadata.image}
@@ -29,10 +32,13 @@ const metadata = await getLinkPreview(url);
         )}
       </>
     ) : (
-      <p>Loading...</p>
+      <div class="link-preview-card-content">
+        <h3 class="link-preview-card-title">{url}</h2>
+        <span class="link-preview-card-url">{url}</span>
+      </div>
     )
   }
-</div>
+</a>
 
 <style>
   .link-preview-card {
@@ -43,14 +49,13 @@ const metadata = await getLinkPreview(url);
     border-radius: 8px;
     overflow: hidden;
     background-color: #f9f9f9;
+    text-decoration: none;
   }
 
   .link-preview-card-content {
     flex: 1;
     padding: 16px;
     overflow: hidden;
-
-    text-decoration: none;
   }
 
   .link-preview-card-title {
