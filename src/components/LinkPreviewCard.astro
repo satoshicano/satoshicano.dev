@@ -10,63 +10,82 @@ const metadata = await getLinkPreview(url);
 ---
 
 <div class="link-preview-card">
-  <div class="link-preview-card-content">
-    <h2 class="link-preview-card-title">{metadata?.title}</h2>
-    <p class="link-preview-card-description">{metadata?.description}</p>
-    <a href={url} class="link-preview-card-url">{url}</a>
-  </div>
-  {metadata?.image && <img src={metadata.image} alt={metadata.title} class="link-preview-card-image" />}
+  {
+    metadata ? (
+      <>
+        <a href={url} target="_blank" rel="noopener noreferrer" class="link-preview-card-content">
+          <h2 class="link-preview-card-title">{metadata.title}</h2>
+          <p class="link-preview-card-description">{metadata.description}</p>
+          <span class="link-preview-card-url">
+            {url}
+          </span>
+        </a>
+        {metadata.image && (
+          <img
+            src={metadata.image}
+            alt={metadata.title}
+            class="link-preview-card-image"
+          />
+        )}
+      </>
+    ) : (
+      <p>Loading...</p>
+    )
+  }
 </div>
 
 <style>
-.link-preview-card {
-  display: flex;
-  width: 100%;
-  height: 160px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #f9f9f9;
-}
+  .link-preview-card {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
 
-.link-preview-card-content {
-  flex: 1;
-  padding: 16px;
-  overflow: hidden;
-}
+  .link-preview-card-content {
+    flex: 1;
+    padding: 16px;
+    overflow: hidden;
 
-.link-preview-card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+    text-decoration: none;
+  }
 
-.link-preview-card-description {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
+  .link-preview-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-.link-preview-card-url {
-  font-size: 0.8rem;
-  color: #007bff;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  .link-preview-card-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #333;
+  }
 
-.link-preview-card-image {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-}
+  .link-preview-card-url {
+    font-size: 0.8rem;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .link-preview-card-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+  }
 </style>
