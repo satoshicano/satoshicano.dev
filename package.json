@@ -13,6 +13,7 @@
 		"@astrojs/mdx": "^4.0.8",
 		"@astrojs/rss": "^4.0.11",
 		"@astrojs/sitemap": "^3.2.1",
+		"@extractus/article-extractor": "^8.0.17",
 		"astro": "^5.2.5"
 	}
 }
