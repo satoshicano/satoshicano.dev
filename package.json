@@ -10,10 +10,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "4.2.2",
+		"@astrojs/mdx": "4.2.3",
 		"@astrojs/rss": "4.0.11",
 		"@astrojs/sitemap": "3.3.0",
 		"@extractus/article-extractor": "8.0.17",
-		"astro": "5.5.5"
+		"astro": "5.5.6"
 	}
 }
