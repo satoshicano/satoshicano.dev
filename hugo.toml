@@ -8,7 +8,7 @@ title = "satoshicano's Blog"
 
 [params]
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'linen' # linen, wheat, gray, light
 
   # header social icons
   twitter = 'satoshicano'
@@ -16,7 +16,7 @@ title = "satoshicano's Blog"
   instagram = 'satoshicano'
 
   # home page profile
-  avatar = 'satoshicano@gmail.com'                 # gravatar email or image url
+  avatar = 'satoshicano@gmail.com'            # gravatar email or image url
   name = 'satoshicano'
   bio = 'Software engineer working in Japan.'
 
