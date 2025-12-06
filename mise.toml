@@ -1,3 +1,2 @@
 [tools]
-node = "24"
-pnpm = "latest"
+hugo = "0.152.2"
