@@ -33,7 +33,6 @@ title = "satoshicano's Blog"
   disableHLJS = true                                  # disable highlight.js
   disablePostNavigation = true                        # disable post navigation
   monoDarkIcon = true                                 # show monochrome dark mode icon
-  gravatarCdn = 'https://secure.gravatar.com/avatar/' # e.g. 'https://cdn.v2ex.com/gravatar/'
   math = true                                         # enable KaTeX math typesetting globally
   localKatex = false                                  # use local KaTeX js/css instead of CDN
   favicon = "favicon.ico"                             # customize the default favicon
