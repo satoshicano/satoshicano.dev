@@ -1,6 +1,5 @@
 +++
 date = '2025-12-06T22:27:23+09:00'
-draft = true
 title = 'Macos Tools 2025'
 +++
 
