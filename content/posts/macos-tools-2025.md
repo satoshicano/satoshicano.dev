@@ -1,87 +1,70 @@
----
-title: "macos tools I'm using at 2025"
-description: 'macosでよく使っているアプリケーション'
-pubDate: '3 17 2025'
----
-import LinkPreviewCard from "../../components/LinkPreviewCard.astro";
++++
+date = '2025-12-06T22:27:23+09:00'
+draft = true
+title = 'Macos Tools 2025'
++++
 
 macosをクリーンインストールした後に入れているアプリケーションを整理する.
 
-
-### 1Password
+### [1Password](https://1password.com/)
 
 パスワード管理.
 
-<LinkPreviewCard  url="https://1password.com/" />
-
-### AltTab
+### [AltTab](https://alt-tab-macos.netlify.app/)
 
 Windowsライクなウィンドウスイッチャーアプリ.
 `⌘ + Tab`を割り当てて使っている.
 
-<LinkPreviewCard  url="https://alt-tab-macos.netlify.app/" />
-
-### CleanShot X
+### [CleanShot X](https://cleanshot.com/)
 
 スクリーンキャプチャおよび録画ツール.キャプチャした画像や動画を素早く編集するのに使っている.
-
-<LinkPreviewCard url="https://cleanshot.com/" />
 
 ## Docker
 
 コンテナを使った開発用
 
-<LinkPreviewCard  url="https://www.docker.com/ja-jp/products/docker-desktop/" />
+### [Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)
 
-## GitHub Desktop
+### [GitHub Desktop](https://desktop.github.com/)
 
 GUIでのGit操作をするときに使っている.ほぼdiffを見るときしか使わない.
 
-<LinkPreviewCard url="https://desktop.github.com/download/" />
-
-## Maccy
+### [Maccy](https://maccy.app/)
 
 クリップボード履歴管理ツール.ショートカットを使って過去のコピー履歴を貼り付ける等できる.
 
-<LinkPreviewCard  url="https://maccy.app/" />
-
-## Notion Calendar
+### [Notion Calendar](https://www.notion.com/ja/product/calendar)
 
 複数カレンダーをまとめて表示できるカレンダーアプリ. Google Workspaceアカウントを複数使わないといけないときに便利.
 別のカレンダーに対して予定をblockする機能がかなり良い.
 
-<LinkPreviewCard url="https://www.notion.com/ja/product/calendar" />
-
-## TablePlus
+### [TablePlus](https://tableplus.com/)
 
 データベースクライアント. 複数のデータベースを一括で管理できる.
 
-<LinkPreviewCard url="https://tableplus.com/" />
-
-## Velja
+### [Velja](https://sindresorhus.com/velja)
 
 ブラウザピッカー. URLを開く際、どのブラウザで開くかし選択できる.
 
-<LinkPreviewCard url="https://sindresorhus.com/velja" />
-
-## Visual Studio Code
+### [Visual Studio Code](https://code.visualstudio.com/)
 
 エディタ. ほぼ全ての開発作業で使っている.
 
-<LinkPreviewCard url="https://code.visualstudio.com/" />
-
-## Zed
+### [Zed](https://zed.dev/)
 
 Atomライクなエディタ. ちょっとしたメモを書くときに使っている.
 
-<LinkPreviewCard url="https://zed.dev/" />
+### [Warp](https://www.warp.dev/)
 
-### Warp
+Terminal.
+特にカスタマイズしなくてもコマンドの補完などしてくれて便利.
+
+### [Zed](https://zed.dev/)
+
+Atomライクなエディタ. ちょっとしたメモを書くときに使っている.
+
+### [Warp](https://www.warp.dev/)
 
 Terminal.
 特にカスタマイズしなくてもコマンドの補完などしてくれて便利.
 あと, Windowsにも対応しているので, Windowsマシンを使うときも同じ操作感で使えるのが良い.
-
-<LinkPreviewCard  url="https://www.warp.dev/" />
-
-
