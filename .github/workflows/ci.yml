@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Setup Go
+        uses: actions/setup-go@4dc6199c7b1a012772edbd06daecab0f50c9053c # v6.1.0
+        with:
+          go-version: "1.25.5"
+
+      - name: Build site
+        run: hugo
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "public" ]; then
+            echo "Error: public directory not created"
+            exit 1
+          fi
+          if [ ! -f "public/index.html" ]; then
+            echo "Error: index.html not created"
+            exit 1
+          fi
+          echo "Build successful! Generated files in public/"
