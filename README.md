@@ -36,7 +36,11 @@ This is the source code for [satoshicano.dev](https://satoshicano.dev), a blog w
 - **Go 1.23+** - For module management
 - **Mise** (optional) - For managing tool versions
 
-## Installation & Setup
+Or use Docker to run Hugo without installing it locally.
+
+- **Container** - [Install Container](https://github.com/apple/container)
+
+## Installation & Setup(Locally)
 
 1. Clone the repository:
 ```bash
@@ -56,15 +60,28 @@ hugo server
 
 The site will be available at `http://localhost:1313/`
 
-## Building
+## Installation & Setup (Using Container)
 
-Generate the static site for production:
-
+1. Clone the repository:
 ```bash
-hugo
+gh repo clone satoshicano/satoshicano.dev
+cd satoshicano.dev
 ```
 
-The generated site will be in the `public/` directory.
+2. Build and run the development server using Container:
+```bash
+container run \
+  --name hugo-dev \
+  --rm \
+  -p 1313:1313 \
+  -v "$PWD:/src" \
+  -w /src \
+  -it \
+  hugomods/hugo:latest \
+  hugo server --bind 0.0.0.0
+```
+
+The site will be available at `http://localhost:1313/`
 
 ## Content Management
 
@@ -89,48 +106,13 @@ Your content here...
 
 3. The site will automatically rebuild with hot reload during development.
 
-### Supported Features
-
-- **Markdown** - Full markdown support with extended syntax
-- **KaTeX Math** - Mathematical notation with `$...$` (inline) or `$$...$$` (block)
-- **Code Highlighting** - Syntax highlighting for code blocks
-- **Tags & Categories** - Organize posts by topic
-
-## Configuration
-
-Edit `hugo.toml` to customize:
-
-- **baseURL** - Your website URL
-- **title** - Site title
-- **Social Links** - Twitter, GitHub, Instagram
-- **Theme Colors** - Choose from: linen, wheat, gray, light
-- **Avatar** - Gravatar email or image URL
-- **Bio** - Brief profile description
-
 ## Deployment
 
-This site is ready to be deployed to:
+This site is hosted on Cloudflare Pages. To deploy:
+1. Push changes to the main branch.
+2. Cloudflare Pages will automatically build and deploy the site.
 
-- **Hugo Hosting** services (Netlify, Vercel, GitHub Pages)
-- **Traditional Web Hosting** - Upload the `public/` directory via FTP/SFTP
-- **Docker** - Containerize with your preferred base image
-
-### Example: GitHub Pages
-
-1. Build the site:
-```bash
-hugo
-```
-
-2. Push the `public/` directory to your GitHub Pages branch
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Resources
-
-- [Hugo Documentation](https://gohugo.io/documentation/)
-- [Hugo Paper Theme](https://github.com/nanxiaobei/hugo-paper)
-- [KaTeX Documentation](https://katex.org/)
-- [Markdown Guide](https://www.markdownguide.org/)
