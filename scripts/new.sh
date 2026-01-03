@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## posts/new-article.md
-content=$0
+content=$1
 
 container run --rm \
   -v "$PWD:/src" \
