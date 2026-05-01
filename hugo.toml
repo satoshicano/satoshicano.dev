@@ -26,6 +26,7 @@ instagram = "satoshicano"
 avatar = "satoshicano@gmail.com"  # gravatar email or image url
 name = "satoshicano"
 bio = "Software engineer working in Japan."
+author = "satoshicano"
 
 # misc
 disableHLJS = true  # disable highlight.js
