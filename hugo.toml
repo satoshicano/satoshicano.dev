@@ -1,5 +1,5 @@
 baseURL = "https://satoshicano.dev/"
-languageCode = "ja-jp"
+defaultContentLanguage = "ja"
 title = "satoshicano's Blog"
 
 [module]
