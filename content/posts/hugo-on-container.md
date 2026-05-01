@@ -5,7 +5,7 @@ title = 'using Container for Hugo site'
 tags = ['hugo', 'container', 'macOS', 'development']
 +++
 
-Apple公式のコンテナランタイム「Container」を使って、Hugoの執筆環境をコンテナ化してみました。Containerの基本的な使い方を学びながら、実用的な開発環境を構築する過程を紹介します。
+Apple公式のコンテナランタイム「Container」を使って、Hugoの執筆環境をコンテナ化してみたので学習用メモを残しておきます。
 
 ## Containerとは
 
