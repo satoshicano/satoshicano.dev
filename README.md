@@ -106,6 +106,28 @@ Your content here...
 
 3. The site will automatically rebuild with hot reload during development.
 
+## GitHub Actions dependency lockfile
+
+Workflow action dependencies are recorded in `.github/workflows/actions.lock`.
+CI verifies the lockfile on pull requests, pushes to `main`, and every Monday
+at 09:00 JST.
+
+Install the GitHub CLI extension with an authenticated `gh` session:
+
+```bash
+gh extension install github/gh-actions-lock --pin v0.4.1
+```
+
+After adding a workflow or changing an action's `uses:` reference, regenerate
+and verify the lockfile, then commit it together with the workflow changes:
+
+```bash
+gh actions-lock
+gh actions-lock --verify
+```
+
+Use `gh actions-lock --relock` to refresh existing locked references.
+
 ## Deployment
 
 This site is hosted on Cloudflare Pages. To deploy:
